@@ -52,7 +52,7 @@ $status_message = ""; // Initialize status message variable
                 echo "<option value='approved' " . ($row["status"] == "approved" ? "selected" : "") . ">Approved</option>";
                 echo "<option value='rejected' " . ($row["status"] == "rejected" ? "selected" : "") . ">Rejected</option>";
                 echo "</select>";
-                echo "<button type='submit'>Update Status</button>";
+                echo "<button type='submit'>Update Successfully Status</button>";
                 echo "</form>";
                 echo "</td>";
                 echo "</tr>";
