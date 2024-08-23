@@ -1,0 +1,318 @@
+
+        /* General Styles */
+        /* General Styles */
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #343a40;
+            color: #fff;
+            padding-top: 20px;
+            position: fixed;
+            height: 100%;
+            left: 0;
+            top: 0;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding-top: 50px;
+        }
+
+        .sidebar ul li {
+            padding: 7px;
+        }
+
+        .sidebar ul li a {
+            padding-top: 10px;
+            color: #fff;
+            text-decoration: none;
+            display: block;
+        }
+
+        .sidebar ul li a.active {
+            font-weight: bold;
+        }
+
+        .content {
+            position: relative;
+            margin-left: 250px;
+            padding: 20px;
+            width: calc(100% - 250px);
+        }
+
+        .profilebtn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        /* Student Profile Section */
+
+       
+        .stdprofile {
+            padding-top: 30px;
+            text-align: left;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        /* Profile Section */
+
+
+        .profile {
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center center;
+            cursor: pointer;
+        }
+
+        .change-pic {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 4px 8px;
+            cursor: pointer;
+            font-size: 12px;
+            border-top-left-radius: 5px;
+        }
+
+        /* Breadcrumbs */
+        .breadcrumbs {
+            background-color: #f8f9fa;
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+
+        .breadcrumbs ol {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .breadcrumbs ol li {
+            display: inline;
+            font-size: 14px;
+        }
+
+        .breadcrumbs ol li+li:before {
+            padding: 0 5px;
+            color: #6c757d;
+            content: "/";
+        }
+
+        /* Attendance Table */
+        .attendance-table {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .attendance-table.h2{
+            text-align: center;
+            font-weight: bold;
+        }
+        .attendance-table table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+        }
+
+        .attendance-table table th,
+        .attendance-table table td {
+            border: 1px solid #dee2e6;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .attendance-table table th {
+            background-color: #343a40;
+            color: #fff;
+        }
+
+        .attendance-table table tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .modal-content {
+            position: relative;
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .upload-btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .upload-btn:hover {
+            background-color: #0056b3;
+        }
+        h2{
+            text-align: center;
+        }
+ 
+
+        /* Mark Attendance Section */
+.mark-attendance {
+    display: none;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.mark-attendance h2 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #343a40;
+}
+
+.mark-attendance form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mark-attendance label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #495057;
+}
+
+.mark-attendance select,
+.mark-attendance button {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+.mark-attendance button {
+    background-color: #000102;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.mark-attendance button:hover {
+    background-color: #ff2756;
+}
+
+
+
+ /* Initially hide the leave request form */
+
+.leave-request {
+    display: none; /* Initially hide the leave request form */
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.leave-request h2 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #343a40;
+}
+
+.leave-request form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.leave-request label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #495057;
+}
+
+.leave-request textarea,
+.leave-request button {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+.leave-request button {
+    background-color: #000102;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.leave-request button:hover {
+    background-color: #ff2756;
+}

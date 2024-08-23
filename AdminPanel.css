@@ -1,0 +1,294 @@
+   /* General Styles */
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #f8f9fa; /* Light gray background */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      min-height: 100vh; /* Use full height of viewport */
+    }
+
+    .sidebar {
+      width: 250px; /* Sidebar width */
+      background-color: #343a40; /* Dark background color */
+      color: #fff; /* Text color */
+      padding-top: 20px; /* Padding at the top */
+      position: fixed; /* Fixed position */
+      height: 100%; /* Full height */
+      left: 0; /* Stick to the left */
+      top: 0; /* Stick to the top */
+    }
+
+    .sidebar ul {
+      list-style-type: none; /* Remove list styles */
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      padding: 10px;
+    }
+
+    .sidebar ul li a {
+      color: #fff; /* Text color */
+      text-decoration: none;
+      display: block; /* Full width link */
+    }
+
+    .sidebar ul li a.active {
+      font-weight: bold; /* Bold text for active link */
+    }
+
+    .content {
+
+      margin-left: 250px; /* Adjust content margin to fit sidebar */
+      padding: 20px; /* Padding inside content area */
+      width: 100%; /* Take remaining width */
+    }
+
+    .profilebtn {
+      position: absolute;
+      top: 20px;
+      left: 90px;
+  }
+    /* Profile Section */
+    .profile {
+      text-align: center;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .profile img {
+      width: 150px;
+      height: 150px; /* Adjusted height for better appearance */
+      border-radius: 50%; /* Rounded profile picture */
+      object-fit: cover; /* Ensure the image covers the entire space */
+      object-position: center center; /* Center the image */
+      cursor: pointer; /* Change cursor to pointer for better UX */
+    }
+
+    .change-pic {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 4px 8px;
+      cursor: pointer;
+      font-size: 12px;
+      border-top-left-radius: 5px;
+    }
+
+    /* Breadcrumbs */
+    .breadcrumbs {
+      background-color: #f8f9fa; /* Light gray background */
+      padding: 10px 20px; /* Padding inside breadcrumbs */
+      margin-top: 20px; /* Space above breadcrumbs */
+    }
+
+    .breadcrumbs ol {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .breadcrumbs ol li {
+      display: inline;
+      font-size: 14px;
+    }
+
+    .breadcrumbs ol li + li:before {
+      padding: 0 5px;
+      color: #6c757d;
+      content: "/";
+    }
+
+    /* Back to Top Button */
+
+
+
+    /* Profile Picture Modal */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0,0.9);
+    }
+
+    .modal-content {
+      position: relative;
+      background-color: #fefefe;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .upload-btn {
+      background-color: #ff6b6b;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .upload-btn:hover {
+      background-color: #ff75c1;
+    }
+
+
+
+
+    
+    /* Table style */
+    
+    #studentsTable {
+      text-align: center;
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    #studentsTable th,
+    #studentsTable td {
+      border: 1px solid #dee2e6;
+      padding: 8px;
+      text-align: left;
+    }
+
+    #studentsTable th {
+      background-color: #343a40;
+      color: #fff;
+    }
+
+    #studentsTable tbody tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+
+    /* Manage Attendance Section */
+#manageAttendanceContent {
+  display: none; /* Initially hidden */
+}
+
+#manageAttendanceContent.active {
+  display: block; /* Display when active */
+}
+
+#attendanceTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#attendanceTable th,
+#attendanceTable td {
+  border: 1px solid #dee2e6;
+  padding: 8px;
+  text-align: left;
+}
+
+#attendanceTable th {
+  background-color: #010407;
+  color: #fff;
+}
+
+#attendanceTable tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+        /* Table styles */
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          margin-top: 20px;
+      }
+
+      table th, table td {
+          border: 1px solid #ddd;
+          padding: 12px;
+          text-align: left;
+      }
+
+      table th {
+          background-color: #f8f8f8;
+          color: #333;
+      }
+
+      table tr:nth-child(even) {
+          background-color: #f2f2f2;
+      }
+
+      table tr:hover {
+          background-color: #eaeaea;
+      }
+
+      /* Form styles */
+      form {
+          display: inline-block;
+      }
+
+      select, button {
+          padding: 8px;
+          font-size: 14px;
+          margin-right: 5px;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+      }
+
+      button {
+          background-color: #ff9191;
+          color: #fff;
+          border: none;
+          cursor: pointer;
+      }
+
+      button:hover {
+          background-color: #ff7077;
+      }
+
+      /* Message styles */
+      .status-message {
+          margin-top: 20px;
+          padding: 10px;
+          border-radius: 5px;
+          text-align: center;
+      }
+
+      .status-message.success {
+          background-color: #d4edda;
+          color: #ff6c6c;
+      }
+
+      .status-message.error {
+          background-color: #f8d7da;
+          color: #ff5869;
+      }
